@@ -43,7 +43,7 @@ services: #array de los servicios que vamos a utilizar
 ```
 
 
-###Configuración de PgAdmin
+###´Configuración de PgAdmin
 ```
 #copia y pega esto en el docker-compose.yml justo después que lo que ya escribiste de odoo y lo de postgresSQL
  pgadmin: #nombre del servicio para el gestor de la base de datos
