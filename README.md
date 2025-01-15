@@ -66,3 +66,7 @@ volumes: #Los volumenes de arriba, los tenemos que declarar fuera para que sean 
   pgadmin-data: #volumen de persistencia de datos de PgAdmin
 ```
 
+Con todo esto, debería de instalarse correctamente, el siguiente paso es escribir lo siguiente en el navegador:
+```
+http://(ip de la maquina):8069
+```
