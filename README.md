@@ -70,3 +70,6 @@ Con todo esto, debería de instalarse correctamente, el siguiente paso es escrib
 ```
 http://(ip de la maquina):8069
 ```
+
+si los pasos son correctos, debería de apareecer la siguiente pantalla:
+![odoo1](https://github.com/user-attachments/assets/89ffc97f-77e2-4a5f-882a-e821eccbb2fa)
