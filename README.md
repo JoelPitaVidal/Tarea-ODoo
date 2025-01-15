@@ -72,4 +72,4 @@ http://(ip de la maquina):8069
 ```
 
 si los pasos son correctos, debería de apareecer la siguiente pantalla:
-![odoo1](DockerCompose/Captura de pantalla 2025-01-15 183049.jpg)
+![odoo1]([DockerCompose/Captura de pantalla 2025-01-15 183049.jpg](https://github.com/JoelPitaVidal/Tarea-ODoo/blob/main/DockerCompose/Captura%20de%20pantalla%202025-01-15%20183049.jpg))
