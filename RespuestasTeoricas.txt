@@ -1,0 +1,8 @@
+1. ¿Que ocurre si en el ordenador local el puerto 5432 está ocupado?
+Si el puerto está ocupado, el docker-compose.yml mostrará un error a la hora de levantar el servicio, ya que hemos indicado que vamos a usar ese puerto y nos dirá que ese puerto está siendo usado por otro servicio del ordenador.
+
+2. ¿Y si lo estuviese el 8069?
+Lo mismo que para postgresSQL, nos dará un error ya que hemos especificado en el docker-compose.yml de odoo, que vamos a usar ese puerto y nos dará un error diciendo que otro servicio ya está usando ese puerto
+
+3. ¿Como puedes solucionarlo?
+ mata los servicios que están usando esos puertos en un terminal, buscamos los procesos activos y matamos las tareas que usan esos puertos que queremos usar para postgresSQL y odoo
