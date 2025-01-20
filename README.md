@@ -66,8 +66,8 @@ volumes: #Los volumenes de arriba, los tenemos que declarar fuera para que sean 
 ```
 
 si los pasos son correctos, debería de apareecer la siguiente pantalla:
+![Captura de pantalla 2025-01-15 183049](https://github.com/user-attachments/assets/7c5fbb41-0cc0-4522-b98e-b74e50dcd677)
 
-![odoo1]([DockerCompose/Captura de pantalla 2025-01-15 183049.jpg])
 
 ### Inicio de sesión Odoo
 
@@ -77,16 +77,16 @@ http://(ip de la maquina):8069
 ```
 
 para así poder acceder al apartado de odoo que nos permite acrear una db
-
-![odoo1]([DockerCompose/DockerCompose/crearDatabase.png])
+![crearDatabase](https://github.com/user-attachments/assets/caa57436-d90e-46b4-a8ff-7d47c1313c8f)
 
 Al introducir las credenciales adecuadas nos llevará a una pantalla de inicio de sesión, en la que introduciremos el correo electrónico y la contraseña para acceder al menú principal de Odoo
+![inicio](https://github.com/user-attachments/assets/798e349f-6767-4ca1-bd0b-0a82806a7dca)
 
-![odoo1]([DockerCompose/inicio.png])
+
 
 Y en el apartádo de ajustes en la esquina superior izquierda podémos asegurarnos de que tenémos instalada la versión adecuada, en este caso la 17.
+![VerificarVersionOdoo](https://github.com/user-attachments/assets/c44ab6c3-afd7-4be7-b953-0f88d7e585eb)
 
-![odoo1]([DockerCompose/VerificarVersionOdoo.png])
 
 ### Inicio de sesión PgAdmin
 
@@ -95,14 +95,16 @@ Para acceder a PgAdmin se hace de forma similar a Odoo, lo único que debemos ha
 http://(ip de la maquina):5050
 ```
 Donde introduciremos nuestras credenciales
-![odoo1]([DockerCompose/InicioPGadmin.png])
+![InicioPGadmin](https://github.com/user-attachments/assets/e74995fd-2061-45c8-a8ad-e113b8bcc7f0)
+
 
 Y nos dirigirá a la siguiente pantalla de início
-![odoo1]([DockerCompose/pagInicioPGadmin.png])
+![pagInicioPGadmin](https://github.com/user-attachments/assets/b554613f-2bf6-4e09-af0d-35c9369bb68d)
+
 
 El último paso es añadir la base de datos creada, ya que esta no aparéce por defecto, debemos pulsar en "Add new service", introducimos el nombre y las credenciales que nos pide y procederemos a tenerla ya lista y preparada-
-![odoo1]([[DockerCompose/AñadimosDatabase.png](https://github.com/JoelPitaVidal/Tarea-ODoo/blob/main/DockerCompose/A%C3%B1adimosDatabase.png)])
 
+![AñadimosDatabase](https://github.com/user-attachments/assets/0493bf1f-b902-4c56-b7cd-9c4e0fe04bf3)
 
 
 Y con esto finaliza la instalación de Odoo y PgAdmin
