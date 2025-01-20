@@ -45,7 +45,6 @@ services: #array de los servicios que vamos a utilizar
 
 ###´Configuración de PgAdmin
 ```
-#copia y pega esto en el docker-compose.yml justo después que lo que ya escribiste de odoo y lo de postgresSQL
  pgadmin: #nombre del servicio para el gestor de la base de datos
     restart: unless-stopped #indicamos que el servicio no se va a detener a menos que lo hagamos nosotros
     image: dpage/pgadmin4:latest #nos descargamos la versión más reciente de PgAdmin
@@ -66,10 +65,44 @@ volumes: #Los volumenes de arriba, los tenemos que declarar fuera para que sean 
   pgadmin-data: #volumen de persistencia de datos de PgAdmin
 ```
 
+si los pasos son correctos, debería de apareecer la siguiente pantalla:
+
+![odoo1]([DockerCompose/Captura de pantalla 2025-01-15 183049.jpg])
+
+### Inicio de sesión Odoo
+
 Con todo esto, debería de instalarse correctamente, el siguiente paso es escribir lo siguiente en el navegador:
 ```
 http://(ip de la maquina):8069
 ```
 
-si los pasos son correctos, debería de apareecer la siguiente pantalla:
-![odoo1]([DockerCompose/Captura de pantalla 2025-01-15 183049.jpg](https://github.com/JoelPitaVidal/Tarea-ODoo/blob/main/DockerCompose/Captura%20de%20pantalla%202025-01-15%20183049.jpg))
+para así poder acceder al apartado de odoo que nos permite acrear una db
+
+![odoo1]([DockerCompose/DockerCompose/crearDatabase.png])
+
+Al introducir las credenciales adecuadas nos llevará a una pantalla de inicio de sesión, en la que introduciremos el correo electrónico y la contraseña para acceder al menú principal de Odoo
+
+![odoo1]([DockerCompose/inicio.png])
+
+Y en el apartádo de ajustes en la esquina superior izquierda podémos asegurarnos de que tenémos instalada la versión adecuada, en este caso la 17.
+
+![odoo1]([DockerCompose/VerificarVersionOdoo.png])
+
+### Inicio de sesión PgAdmin
+
+Para acceder a PgAdmin se hace de forma similar a Odoo, lo único que debemos hacer es cambiar el puerto por el 5050
+```
+http://(ip de la maquina):5050
+```
+Donde introduciremos nuestras credenciales
+![odoo1]([DockerCompose/InicioPGadmin.png])
+
+Y nos dirigirá a la siguiente pantalla de início
+![odoo1]([DockerCompose/pagInicioPGadmin.png])
+
+El último paso es añadir la base de datos creada, ya que esta no aparéce por defecto, debemos pulsar en "Add new service", introducimos el nombre y las credenciales que nos pide y procederemos a tenerla ya lista y preparada-
+![odoo1]([DockerCompose/AñadimosDatabase.png])
+
+
+
+Y con esto finaliza la instalación de Odoo y PgAdmin
