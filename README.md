@@ -101,7 +101,7 @@ Y nos dirigirá a la siguiente pantalla de início
 ![odoo1]([DockerCompose/pagInicioPGadmin.png])
 
 El último paso es añadir la base de datos creada, ya que esta no aparéce por defecto, debemos pulsar en "Add new service", introducimos el nombre y las credenciales que nos pide y procederemos a tenerla ya lista y preparada-
-![odoo1]([DockerCompose/AñadimosDatabase.png])
+![odoo1]([[DockerCompose/AñadimosDatabase.png](https://github.com/JoelPitaVidal/Tarea-ODoo/blob/main/DockerCompose/A%C3%B1adimosDatabase.png)])
 
 
 
