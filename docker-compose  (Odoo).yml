@@ -36,7 +36,7 @@ services: #array de los servicios que vamos a utilizar
     ports: #Hacemos que sea accesible desde el puerto 5050 para poder entrar al servicio desde fuera de docker
       - "5050:80"
     environment: #variables de entorno del gestor de base de datos
-      PGADMIN_DEFAULT_EMAIL: cr.m23@hotmail.com
+      PGADMIN_DEFAULT_EMAIL: jpitavidal@danielcastelao.org
       PGADMIN_DEFAULT_PASSWORD: PgAdminPassword
     volumes: #realizamos la persistencia de datos ya que si se corrompe el servicio y no hacemos esto, perdemos todo
       - pgadmin-data:/var/lib/pgadmin
